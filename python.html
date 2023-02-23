@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="body">
+        <!-- !NAVBAR Starts -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand logo" href="#"><img src="images/logos.png" alt="logo"></a>
+            <h3 class="brand">CODING</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse head" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <!--<li class="nav-item">
+                        <a class="nav-link active" href="#">Python</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PHP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Visual Basic</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- !NAVBAR Ends -->
+        <div class="container">
+            <!-- !Introduction Section Starts -->
+            <div class="heading">
+                <div class="image">
+                    <img src="images/python.png" alt="python">
+                    <h4>Python</h4>
+                </div>
+                <div class="intro">
+                    <p>
+                        Python is high-level, interpreted programming language that is designed to be easy to read and
+                        write.
+                        It was created by Guido van Rossum and first released in 1991. Python is an open-soruce language
+                        and
+                        is
+                        widely used in various domains such as web development, data science, machine learning,
+                        artifical
+                        intelligence
+                        and many more.
+                    </p>
+                    <p>
+                        Python also has a simple and clean syntax, which makes it easy to learn and use for beginners.
+                        It is
+                        also a
+                        very powerful language with vast array of libraries and frameworks that make it capable of
+                        handling
+                        its complex
+                        tasks.
+                    </p>
+                </div>
+            </div>
+            <!-- !Introduction Section Ends-->
+
+            <!-- !Questions and Solutions Starts -->
+
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to iterate the first 10 numbers in each iteration, print the sum of the
+                        current and previous numbers.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        Expected Output: <br><br>
+                        Printing current and previous number sum in a range(10)<br>
+                        Current Number: 0 Previous Number: 0 Sum: 0<br>
+                        Current Number: 1 Previous Number: 0 Sum: 1<br>
+                        Current Number: 2 Previous Number: 1 Sum: 3<br>
+                        Current Number: 3 Previous Number: 2 Sum: 5<br>
+                        Current Number: 4 Previous Number: 3 Sum: 7<br>
+                        Current Number: 5 Previous Number: 4 Sum: 9<br>
+                        Current Number: 6 Previous Number: 5 Sum: 11<br>
+                        Current Number: 7 Previous Number: 6 Sum: 13<br>
+                        Current Number: 8 Previous Number: 7 Sum: 15<br>
+                        Current Number: 9 Previous Number: 8 Sum: 17<br>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        print("Printing current and previous number and their sum in a range(10)")<br>
+                        previous_num = 0<br>
+                        for i in range(1, 11):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;x_sum = previous_num + i<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("Current Number: ", i, "Previous Number: ", previous_num, " Sum:
+                        ", x_sum)<br>
+                        previous_num = i<br>
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to print like this using for loop.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        1<br>
+                        22<br>
+                        333<br>
+                        4444<br>
+                        55555<br>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        for i in range(5, 0, -1):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for j in range(0, i):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i, end="")<br>
+                        print()<br>
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to print like this using for loop.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        55555<br>
+                        4444<br>
+                        333<br>
+                        22<br>
+                        1<br>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        num = int(input("Enter a number: "))<br>
+                        for i in range(1, num):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for j in range(0, i):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i, end="")<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print()<br>
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to print multiplication table (table of 10) up to a given number
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        For example, num = 2 so the output should be multiplication table from 1-2:<br>
+                        -----1-----<br>
+                        1 x 1 = 1<br>
+                        1 x 2 = 2<br>
+                        1 x 3 = 3<br>
+                        1 x 4 = 4<br>
+                        1 x 5 = 5<br>
+                        1 x 6 = 6<br>
+                        1 x 7 = 7<br>
+                        1 x 8 = 8<br>
+                        1 x 9 = 9<br>
+                        1 x 10 = 10<br>
+                        -----2-----<br>
+                        2 x 1 = 2<br>
+                        2 x 2 = 4<br>
+                        2 x 3 = 6<br>
+                        2 x 4 = 8<br>
+                        2 x 5 = 10<br>
+                        2 x 6 = 12<br>
+                        2 x 7 = 14<br>
+                        2 x 8 = 16<br>
+                        2 x 9 = 18<br>
+                        2 x 10 = 20<br>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        num = int(input("Enter a numer: "))<br>
+                        for i in range(1, num+1):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("---", i, "---")<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for j in range(1, 11):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i, "x", j, "=", i * j)<br>
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to print a given string in the inverse order.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        e.g. if "ram" iss given<br>
+                        answer: "mar"<br>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        b = ""<br>
+                        a = "ram"<br>
+                        for v in a:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;b = v + b<br>
+                        print (b)<br>
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to display all prime numbers on any given range.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        num = int(input("Enter a number: "))<br>
+                        for i in range(2, num):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if (num % i) == 0:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Composite Number")<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Prime Number")<br>
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to display all prime numbers from 25 and 50.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        Prime numbers between 25 and 50 are:<br>
+                        29<br>
+                        31<br>
+                        37<br>
+                        41<br>
+                        43<br>
+                        47<br>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseSeven" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        print("Prime Number from 25 to 50")<br>
+                        for num in range(25, 51):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for i in range(2, num):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (num % i) == 0:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(num)<br>
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to create two variables from a given string: characters and numbers separate.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        e.g.<br>
+                        a = "sadf23sdfdf"<br>
+                        <br>
+                        Answer:<br>
+                        a_char = "sadfsdfdf"<br>
+                        a_num = "23"
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseEight" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        a = "sadf123gh78"<br>
+                        a_char =""<br>
+                        a_num =""<br>
+                        for i in a:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if i.isalpha():<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a_char = a_char + i<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a_num = a_num + i<br>
+                        print("a_char: ",a_char)<br>
+                        print("a_num: ",a_num)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Turn every item of a list into its square <br>
+                        n = [1, 2, 3, 4, 5, 6, 7]
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        Result: <br>
+                        [1, 4, 9, 16, 25, 36, 49]
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseNine" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        num = [1, 2, 3, 4 ,5 ,6] <br>
+                        # new_num = [i+10 for i in num] <br>
+                        new = [i*i for i in num] <br>
+                        # print(new_num) <br>
+                        print(new)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program that print the square of only even numbers from a list.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        Result: <br>
+                        [4, 16, 36]
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTen" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        num = [1, 2, 3, 4 ,5 ,6] <br>
+                        square = []<br>
+                        for i in num:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if i % 2 == 0:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;square.append(i * i)<br>
+                        print(square)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to create a single list from first and second list.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        e.g. <br>
+                        given: <br>
+                        list1 = ["Hello", "take"] <br>
+                        list2 = ["Sir", "care"] <br>
+                        <br>
+                        Result: <br>
+                        ['Hello Sir', 'Hello care', 'take Sir', 'take care']
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseEleven" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        list_one =  ["Hello ", "take "] <br>
+                        list_two = ["Sir", "care"] <br>
+                        list_three = [i + j for i  in list_one for j in list_two] <br>
+                        print(list_three) 
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a program to display Fibonacci Series.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        Fibonacci Series: <br>
+                        0 1 1 2 3 5 8 13 21 34
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwelve" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        num1 = 0 <br>
+                        num2 = 1 <br>
+                        print("Fibonacci Series: ") <br>
+                        for i in range(10): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print(num1, end=" ")<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;result = num1 + num2<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;num1 = num2 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;num2 = result
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a function to print a Christmas tree like this:
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        <img class="tree" src="images/Screenshot 2023-01-24 at 10.47.50 AM.png" alt="treee">
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseThirteen" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        def tree(num, a = "*",): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;i = 1 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;while i <= num: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for j in range(4):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(a.center(20, " "))<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a = a + "*" + "*"<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a = a[1:len(a)-5]<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i += 1<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for j in range(2):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("*".center(20, " "))<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(a.center(20, " "))<br>
+                        num = int(input("Height of a tree: "))<br>
+                        tree(num)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a function that takes list as argument and returns a list with unique items.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        def unique_list(list1): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;.... <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return list1 <br>
+                        list2 = unique_list([1, 2, 1, 3]) <br>
+                        print(list2) <br>
+                        # result is [1, 2, 3]
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseFourteen" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        def unique(list_one): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;i = 1 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;list_two = []<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for i in list_one:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if i is not in list_two:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list_two.append(i)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return list_two<br>
+                        list_two = unique([1, 2, 2, 1, 3, 4, 3]) <br>
+                        print(list_two)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a function to check whether given string is palindrome or not.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                        Palindrome: A string is that doesnot change when reversed(it reads the same backward and forward) <br>
+                        e.g. eye, a ,rrrtrrr
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseFifteen" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        def palindrome(word, a = ""): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;for i in word: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a = i + a<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if a == word:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("It's palindrome.")<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;else: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("It's not palindrome.")<br>
+                        word = str(input("Enter a word: "))<br>
+                        palindrome(word)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Count yhe occurence of each element from a list <br>
+                        Write a program to iterate a given list and count the occurence of each element and create a dictionary to show
+                        the count of each element.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                       Given: <br>
+                       sample_list = [11, 45, 8, 11, 23, 45, 23, 45, 89] <br>
+                       Expected Output: <br>
+                       Printing the count of each item {11: 2, 45: 3, 8: 1, 23: 2, 89: 1}
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseSixteen" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        sample_list = [11, 45, 8, 11, 23, 45, 23, 45, 89]<br>
+                        count = {}<br>
+                        for char in sample_list:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if char in count:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count[char] += 1<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;else: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count[char] = 1<br>
+                        print("Printing the count of each item", count)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a function to solve following:
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                       Given: <br>
+                       keys = ['Ten', 'Twenty', 'Thirty']<br>
+                       values = [10, 20, 30]<br>
+                       Output: <br>
+                       {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseSeventeen" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        keys = ["Ten", "Twenty", "Thirty"]<br>
+                        values = [10, 20, 30]<br>
+                        my_dict = dict(zip(keys, values)) <br>
+                        print(my_dict)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Write a function for following:
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                       Given: <br>
+                       x = [1, 2, 3, 4, 5, 6, 7]<br>
+                       y = [8, 9, 10]<br>
+                       Result: <br>
+                       {1: 8, 2: 9, 3: 10, 4: None, 5: None, 6: None, 7: None}
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseEighteen" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        x = [1, 2, 3, 4, 5, 6, 7]]<br>
+                        values = [8, 9, 10]<br>
+                        for keys, values in enumerate(x):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if keys < len(y): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new_dict[values] = y[keys] <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;else: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new_dict[values] = None <br>
+                        print(new_dict)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Create a Vehicle class with max_speed, mileage, and price instance attributes.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseNinteen" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseNinteen" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        class Vehicle:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, max_speed, mileage, price):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.max_speed = max_speed <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.mileage = mileage <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.price = price <br>
+                        bus = Vehicle(60, 35, 6000000) <br>
+                        print(bus.max_speed) <br>
+                        print(bus.mileage) <br>
+                        print(bus.price)
+                    </div>
+                </div>
+            </div>
+            <div class="qna">
+                <div class="question">
+                    <p>
+                        Create a Bill with Class.
+                    </p>
+                </div>
+                <div class="output">
+                    <p>
+                    </p>
+                </div>
+                <div class="droop">
+                    <h5 class="mb-0">
+                        <a class="btn" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false">
+                            Solution
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwenty" class="collapse drop" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="header">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="answer">
+                        class Bill:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, item, price, quantity):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.max_speed = item <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.price = price <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.quantity = quantity <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;def total(self): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total = self.price * self.quatity <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"Your total bill is {total}.") <br>
+                        c = Bill("Mobile", 700, 3) <br>
+                        c.total()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- !Questions and Solutions Starts -->
+    </div>
+</body>
+
+
+
+<!-- !Optional JavaScript -->
+<!-- *jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
