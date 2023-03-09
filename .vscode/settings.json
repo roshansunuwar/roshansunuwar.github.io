@@ -1,0 +1,23 @@
+{
+    "workbench.colorCustomizations": {
+        "editor.background": "#000",
+        "editorGutter.background": "#111",
+        "sideBar.background": "#000",
+        "sideBar.border": "#ff0000",
+        "activityBar.background": "#111",
+        "activityBar.activeBorder": "#fff",
+        "activityBar.activeBackground": "#ff0000",
+        "tab.activeBackground": "#FF0000",
+        "tab.activeBorder": "#fff",
+        "statusBar.background": "#111",
+        "tab.inactiveBackground": "#000",
+        "editor.selectionBackground": "#9F2B68",
+        "editor.lineHighlightBackground": "#333"
+    },
+    "editor.tokenColorCustomizations": {
+        "comments": {
+            "foreground": "#90EE90"
+        },
+    },
+  
+}
